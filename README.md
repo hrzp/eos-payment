@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python run
 
 ```
-open http://127.0.0.1:5000
+open: http://127.0.0.1:5000
 
 login info:
 

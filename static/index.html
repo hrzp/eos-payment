@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EOS PAYMENT SYSTEM</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">
+    <div class="main">
+      <div class="container">
+        <center>
+          <div class="middle" ng-show="!isLogin">
+            <div id="login">
+              <form action="javascript:void(0);" method="" ng-submit="login()">
+                <fieldset class="clearfix">
+                  <p ><span class="fa fa-user"></span><input type="text"  Placeholder="Username" required ng-model="username"></p>
+                  <!-- JS because of IE support; better: placeholder="Username" -->
+                  <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Password" required ng-model="password"></p>
+                  <!-- JS because of IE support; better: placeholder="Password" -->
+                  <div>
+                    <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
+                    password?</a></span>
+                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
+                  </div>
+                </fieldset>
+                <div class="clearfix"></div>
+              </form>
+              <div class="clearfix"></div>
+            </div>
+            <!-- end login -->
+            <div class="logo">
+              EOS
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div ng-show="isLogin" class="d-flex justify-content-center">
+
+
+
+      <div class="col-xl-4 col-md-6 col-sm-12 ">
+            <div class="card" style="height: 50%;">
+              <div class="card-content">
+                <div class="card-body" style="margin-top: 5%;margin-bottom: 5%;">
+                  <h4 class="card-title">Payment Info</h4>
+                  <p class="card-text">Please Deposit Your Amonut to This Address With The Below <span style="color: red">Memo</span></p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <span class="badge badge-default badge-pill bg-primary float-right">1</span>
+                    <h3>Address: {{address}}</h3>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge badge-default badge-pill bg-info float-right">2</span>
+                    <h3>Memo: {{memo}}</h3>
+                  </li>
+                  <li class="list-group-item waiting">
+                    <span class="badge badge-default badge-pill bg-warning float-right">3</span>
+                    <h3>State: {{state}}</h3>
+                  </li>
+                  <li class="list-group-item" style="padding-top: 5%;padding-bottom: 5%;">
+                    <span class="badge badge-default badge-pill bg-danger float-right">4</span>
+                    <h4>Memo is required when making payment in EOS. Otherwise the order can not be confirmed.</h4>
+                    <h5>After Deposit Please Wait Until We Show You Success Message(do not refresh the page).</h5>
+                  </li>
+                </ul>
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+
+        </center>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

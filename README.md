@@ -40,3 +40,5 @@ my eos account: **davidgilmour**
 my ether account: **0xbce2DD45609c8e02F60bC86044652e9eD73b011f**
 
 my btc address: **19AoBWwbEDNHc3BsKGpbmAuFEUQwAmmZYL**
+
+The source codes in this repository is under heavy development. Do not use it for anything security-critical yet.

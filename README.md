@@ -1,4 +1,5 @@
 # Eos-payment
+# The source codes in this repository is under heavy development. Do not use it for anything security-critical yet.
 A Very Simple eos Payment System
 
 ## It's a very simple flask(a python micro framework) server that can provide a simple eos payment system
